@@ -5,13 +5,13 @@ module.exports = function(RED) {
   async function sendAppInfo(info) {
     const service = await bus.getProxyObject('io.edgeberry.Core', '/io/edgeberry/Core');
     const iface = service.getInterface('io.edgeberry.Core');
-    await iface.SetApplicationInfo(info);
+    await iface.SetApplicationInfo("'"+info+"'");
   }
 
   async function sendAppStatus(status) {
     const service = await bus.getProxyObject('io.edgeberry.Core', '/io/edgeberry/Core');
     const iface = service.getInterface('io.edgeberry.Core');
-    await iface.SetApplicationStatus(status);
+    await iface.SetApplicationStatus("'"+status+"'");
   }
 
   function EdgeberryNode(config) {

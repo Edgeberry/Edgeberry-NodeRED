@@ -1,15 +1,16 @@
 <script type="text/javascript">
   RED.nodes.registerType('edgeberry',{
     category: 'function',
-    color: '#0007ff',
+    color: '#1E1E1E',
     defaults: {
       name: {value:""}
     },
     inputs:1,
     outputs:1,
-    icon: "font-awesome/fa-cogs",
+    icon: "Edgeberry_logo.png",
+    labelStyle: "color: #0007ff;",
     label: function() {
-      return this.name || "Edgeberry Status";
+      return this.name || "Edgeberry";
     }
   });
 </script>
