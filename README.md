@@ -2,7 +2,7 @@
 
 <img src="https://nodered.org/about/resources/media/node-red-icon.png" align="right" width="10%"/>
 
-**[NodeRED](https://nodered.org/)** is a visual programming tool that lets you wire together hardware, APIs, and online services by connecting blocks in a flow-based editor. The **Edgeberry NodeRED node** lets your Node-RED flows communicate with the Edgeberry Device Software over DBus.
+**[Node-RED](https://nodered.org/)** is a visual programming tool that lets you wire together hardware, APIs, and online services by connecting blocks in a flow-based editor. The **Edgeberry Node-RED node** lets your Node-RED flows communicate with the Edgeberry Device Software over DBus.
 
 <br clear="right"/>
 
