@@ -1,6 +1,13 @@
 ![Edgeberry Banner](https://raw.githubusercontent.com/Edgeberry/.github/main/brand/Edgeberry_banner_SDK.png)
 
+<img src="" align="right" width="10%"/>
 **[NodeRED](https://nodered.org/)** is a visual programming tool that lets you wire together hardware, APIs, and online services by connecting blocks in a flow-based editor. The **Edgeberry NodeRED node** lets your Node-RED flows communicate with the Edgeberry Device Software over DBus.
+
+<br clear="right"/>
+
+## Usage
+
+ToDo
 
 ## License & Collaboration
 **Copyright© 2025 Sanne 'SpuQ' Santens**. The Edgeberry NodeRED node is licensed under the **[MIT License](LICENSE.txt)**. The [Rules & Guidelines](https://github.com/Edgeberry/.github/blob/main/brand/Edgeberry_Trademark_Rules_and_Guidelines.md) apply to the usage of the Edgeberry™ brand.
