@@ -5,13 +5,19 @@ module.exports = function(RED) {
   async function sendAppInfo(info) {
     const service = await bus.getProxyObject('io.edgeberry.Core', '/io/edgeberry/Core');
     const iface = service.getInterface('io.edgeberry.Core');
-    await iface.SetApplicationInfo("'"+JSON.stringify(info)+"'");
+    await iface.SetApplicationInfo(JSON.stringify(info));
   }
 
   async function sendAppStatus(status) {
     const service = await bus.getProxyObject('io.edgeberry.Core', '/io/edgeberry/Core');
     const iface = service.getInterface('io.edgeberry.Core');
-    await iface.SetApplicationStatus("'"+JSON.stringify(status)+"'");
+    await iface.SetApplicationStatus(JSON.stringify(status));
+  }
+
+  async function sendIdentify() {
+    const service = await bus.getProxyObject('io.edgeberry.Core', '/io/edgeberry/Core');
+    const iface = service.getInterface('io.edgeberry.Core');
+    await iface.Identify();
   }
 
   function EdgeberryNode(config) {
@@ -27,6 +33,10 @@ module.exports = function(RED) {
         if (msg.payload.status) {
           await sendAppStatus(msg.payload.status);
           node.log('Sent application status to Edgeberry');
+        }
+        if (msg.payload.topic === "identify" ) {
+          await sendIdentify();
+          node.log('Sent identify request to Edgeberry');
         }
       } catch (err) {
         node.error(`Edgeberry DBus error: ${err}`);
