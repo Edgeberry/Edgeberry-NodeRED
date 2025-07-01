@@ -6,6 +6,8 @@
 
 <br clear="right"/>
 
+[![Node-RED](https://img.shields.io/badge/Node--RED-Edgeberry-blue?logo=nodered)](https://flows.nodered.org/node/node-red-contrib-edgeberry)
+
 ## Install in Node-RED UI
 ToDo
 
