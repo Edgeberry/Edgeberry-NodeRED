@@ -1,6 +1,7 @@
 ![Edgeberry Banner](https://raw.githubusercontent.com/Edgeberry/.github/main/brand/Edgeberry_banner_SDK.png)
 
 <img src="" align="right" width="10%"/>
+
 **[NodeRED](https://nodered.org/)** is a visual programming tool that lets you wire together hardware, APIs, and online services by connecting blocks in a flow-based editor. The **Edgeberry NodeRED node** lets your Node-RED flows communicate with the Edgeberry Device Software over DBus.
 
 <br clear="right"/>
