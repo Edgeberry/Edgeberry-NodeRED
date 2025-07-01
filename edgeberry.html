@@ -1,0 +1,30 @@
+<script type="text/javascript">
+  RED.nodes.registerType('edgeberry',{
+    category: 'function',
+    color: '#0007ff',
+    defaults: {
+      name: {value:""}
+    },
+    inputs:1,
+    outputs:1,
+    icon: "font-awesome/fa-cogs",
+    label: function() {
+      return this.name || "Edgeberry Status";
+    }
+  });
+</script>
+
+<script type="text/html" data-template-name="edgeberry">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="edgeberry">
+  <p>This node interacts with the Edgeberry Device Software over DBus.</p>
+  <p><strong>Usage:</strong> Pass a payload with:<br>
+  <code>{"info":{"name":"MyApp","version":"1.0","description":"desc"}}</code><br>
+  or<br>
+  <code>{"status":{"status":"ok","message":"Running fine"}}</code></p>
+</script>
