@@ -34,7 +34,7 @@ module.exports = function(RED) {
           await sendAppStatus(msg.payload.status);
           node.log('Sent application status to Edgeberry');
         }
-        if (msg.payload.topic === "identify" ) {
+        if (msg.topic === "identify" ) {
           await sendIdentify();
           node.log('Sent identify request to Edgeberry');
         }
